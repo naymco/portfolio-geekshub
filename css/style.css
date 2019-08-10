@@ -23,12 +23,12 @@ header::after{
 .logo{
     float: left;
     font-size: 1rem;
-    margin-left: 20px;
+    margin-left: 2%;
     text-transform: uppercase;
     font-weight: 700;
 }
 .logo span{
-    font-weight: 300;
+    font-weight: 200;
 }
 .site-nav{
     top: 100%;
@@ -151,13 +151,13 @@ p{
         position: relative;
         background:  transparent;
         float: right;
-        margin-right: 10px;
+        margin-right: 5%;
         clip-path: initial;
     }
     .site-nav li{
         display: inline-block;
         border: none;
-        padding-right: 40px;
+        
 
     }
     .site-nav a{
