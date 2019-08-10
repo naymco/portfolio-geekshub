@@ -1,6 +1,6 @@
 body{
     font-family: 'Roboto', sans-serif;
-    background: #f0f8ea;
+    background: white;
     margin: 0;
     
 }
@@ -10,8 +10,8 @@ body{
     margin: 0 auto;
 }
 header{
-    background: #557e7c;
-    color: #ebebd3;
+    background: #0f555a;
+    color: white;
     padding: 1em 0;
     position: relative;
 }
@@ -55,15 +55,15 @@ header::after{
     border-bottom: none;
 }
 .site-nav a{
-    color: #ebedb3;
+    color: white;
     display: block;
     padding: 2em 6em;
     text-transform: uppercase;
     text-decoration: none;
 }
 .site-nav a:hover, .site-nav a:focus{
-    background: #e4b363;
-    color: #464655;
+    background: #24a9b3;
+    color: white;
 }
 .site-nav--icon{
     display: inline-block;
@@ -91,7 +91,7 @@ header::after{
 .hamburger, .hamburger::before, .hamburger::after{
     content: '';
     display: block;
-    background: #ebebd3;
+    background: white;
     height: 3px;
     width: 1.75em;
     border-radius: 3px;
@@ -104,17 +104,10 @@ header::after{
     transform: translateY(3px);
 }
 .main-header{
-    background: #e4b363 url(images/web-developer-full-stack.jpeg) no-repeat;
-<<<<<<< HEAD
-    background-position: center top;
+    background: #fff url(images/web-developer-full-stack.jpeg) no-repeat;
+    background-position: left top;
     width: 100%;
     height: 550px;
-    
-=======
-    background-position: center bottom;
-    height: 550px;
-    padding: 20px 0 ;
->>>>>>> ef5630f04f8d6d424d4d8bff13103d3855aef881
     z-index: -99;
 }
 .main-section{
@@ -125,6 +118,7 @@ header::after{
     margin-left: auto;
     margin-right: auto;
 }
+
 h2{
     color: white;
     margin-top: 0;
@@ -136,21 +130,24 @@ p{
     color: white;
     margin-top: 10px;
     padding: 20px;
-    font-size: 1em;
+    font-size: 1.3em;
+    width: 80%;
     
 }
 .button{
     background: transparent;
-    border: 3px solid #ebedb3;
+    border: 3px solid white;
     border-radius: 5px;
     padding: 16px 24px;
     font-size: 15px;
     font-weight: 600;
-    color: #ebedb3;
-    margin-left: 40%;
+    color: white;
+    margin-left: 50%;
+    margin-top: 0;
+    transition: 500ms;
 }
 .button:hover{
-    background: #ebedb3;
+    background: white;
     color: black;
 }
 .footer{
@@ -171,6 +168,7 @@ p{
     }
     .site-nav{
         height: auto;
+        
         position: relative;
         background:  transparent;
         float: right;
@@ -199,11 +197,7 @@ p{
         width: 100%;
         background-position: center bottom;
         height: 750px;
-<<<<<<< HEAD
     }
-=======
-     }
->>>>>>> ef5630f04f8d6d424d4d8bff13103d3855aef881
     h2{
         font-size: 2.5em;
     }
