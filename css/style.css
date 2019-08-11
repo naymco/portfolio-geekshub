@@ -13,7 +13,9 @@ header{
     background: #0f555a;
     color: white;
     padding: 1em 0;
-    position: relative;
+    position: fixed;
+    width: 100%;
+    opacity: 0.8;
 }
 header::after{
     content: '';
@@ -23,9 +25,9 @@ header::after{
 .logo{
     float: left;
     font-size: 1rem;
-    margin-left: 2%;
+    padding-left: 10px;
     text-transform: uppercase;
-    font-weight: 700;
+    font-weight: 800;
 }
 .logo span{
     font-weight: 200;
@@ -62,17 +64,19 @@ header::after{
     text-decoration: none;
 }
 .site-nav a:hover, .site-nav a:focus{
-    background: #24a9b3;
-    color: white;
+    background: #e4e4e4;
+    color: black;
+    font-weight: 700;
 }
 .site-nav--icon{
     display: inline-block;
     font-size: 1em;
     margin-right: 1em;
     width: 1.1em;
-    text-align: right;
+    text-align: left;
     color: rgba(255, 255, 255, 4);
 }
+
 .menu-toggle{
     padding: 1em;
     position: absolute;
@@ -109,6 +113,7 @@ header::after{
     width: 100%;
     height: 550px;
     z-index: -99;
+    -webkit-transform: translate3d(-99,-99,-99);
 }
 .main-section{
     width: 95%;
@@ -118,21 +123,26 @@ header::after{
     margin-left: auto;
     margin-right: auto;
 }
+.content{
+    margin: auto;
+    padding-left: 5%;
+}
 
 h2{
     color: white;
     margin-top: 0;
     font-size: 2em;
-    padding: 30px;
-
+    padding-top: 25%;
+    padding-left: 20px
 }
 p{
     color: white;
     margin-top: 10px;
-    padding: 20px;
+    padding-top: 10px;
     font-size: 1.3em;
     width: 80%;
-    
+    padding-left: 20px
+
 }
 .button{
     background: transparent;
@@ -168,25 +178,25 @@ p{
     }
     .site-nav{
         height: auto;
-        
+        top: 10px;
         position: relative;
         background:  transparent;
         float: right;
-        margin-right: 5%;
+        margin-right: auto;
+        margin-left: auto;
         clip-path: initial;
     }
     .site-nav li{
         display: inline-block;
         border: none;
-        
-
     }
+
     .site-nav a{
         padding: 0;
         margin-left: 3em;
     }
     .site-nav--icon{
-        display: none;
+        display: none !important;
     }
     .site-nav a:hover, .site-nav a:focus{
         background: transparent;
@@ -198,13 +208,20 @@ p{
         background-position: center bottom;
         height: 750px;
     }
+   
     h2{
         font-size: 2.5em;
+        padding-top: 15%;
     }
     p{
         font-size: 1.5em;
         width: 50%;
     }
-    
+    .content{
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        
+    }
     
 }
